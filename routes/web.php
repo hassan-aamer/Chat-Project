@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Models\Message;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,5 +28,11 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+Route::get('delete_chat', function () {
+    Message::truncate();
+    return redirect()->route('dashboard');
+
+})->middleware(['auth'])->name('delete_chat');
 
 require __DIR__.'/auth.php';
