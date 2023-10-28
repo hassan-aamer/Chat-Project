@@ -1,7 +1,7 @@
 <div wire:poll>
     <div class="container">
 
-            @if (auth()->user()->email == "hassan@gmail.com")
+            @if (auth()->user()->email == "hassanaamer048@gmail.com")
             <a class="btn btn-primary pull-right" href="{{ Url('delete_chat') }}">حذف المحادثة</a>
             @endif
             <h3 class=" text-center">CHAT</h3>
