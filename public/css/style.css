@@ -2,6 +2,23 @@
     max-width: 1170px !important;
     margin: auto;
 }
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: #989898;
+}
+html::-webkit-scrollbar-thumb{
+    border-radius: 2rem;
+    background: black;
+}
+.msg_history::-webkit-scrollbar{
+    width: 0.5rem;
+    background: #989898;
+}
+.msg_history::-webkit-scrollbar-thumb{
+    border-radius: 2rem;
+    background: black;
+}
+
 img {
     max-width: 100%;
 }
