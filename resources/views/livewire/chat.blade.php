@@ -45,10 +45,10 @@
 
                     </div><br>
                     <div class="type_msg">
-                        <div class="input_msg_write">
+                        <div id="myForm" class="input_msg_write">
                             <form wire:submit.prevent="sendMessage">
-                                <input onkeydown='scrollDown()' wire:model.defer="messageText" type="text"
-                                    class="write_msg" placeholder="اكتب رسالتك" />
+                                <input id="messageInput" onkeydown='scrollDown()' wire:model.defer="messageText" type="text"
+                                    class="write_msg" placeholder="اكتب رسالتك" required/>
                                 <button style="background-color: #05728f;" class="msg_send_btn" type="submit">ارسال</button>
                             </form>
                         </div>

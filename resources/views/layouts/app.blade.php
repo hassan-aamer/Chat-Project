@@ -57,8 +57,13 @@
         function scrollDown() {
             document.getElementById('chat').scrollTop = document.getElementById('chat').scrollHeight
         }
-
         setInterval(scrollDown, 1000);
+    </script>
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("messageInput").value = "";
+        });
     </script>
 </body>
 
