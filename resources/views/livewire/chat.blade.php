@@ -45,7 +45,7 @@
                             <h5 style="text-align: center;color:red"> لاتوجد رسائل سابقة</h5>
                         @endforelse
 
-                    </div>
+                    </div><br>
                     <div class="type_msg">
                         <div class="input_msg_write">
                             <form wire:submit.prevent="sendMessage">
