@@ -16,7 +16,7 @@ class AdmenSeeder extends Seeder
         User::create([
             'name'=>'Hassan Mohamed',
             'email'=>'hassanaamer048@gmail.com',
-            'password'=>'hassan123456',
+            'password'=>'hassan191998',
         ]);
     }
 }
